@@ -15,6 +15,13 @@ class CreateDoctorsTable extends Migration
     {
         Schema::create('doctors', function (Blueprint $table) {
             $table->id();
+            $table->string('fullname');
+            $table->string('email_address');
+            $table->string('password');
+            $table->string('license')->nullable();
+            $table->string('phone_number')->nullable();
+            $table->string('home_address')->nullable();
+            $table->string('work_address')->nullable();
             $table->timestamps();
         });
     }

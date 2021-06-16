@@ -13,11 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::redirect('/', '/home');
+Route::group([ 'middleware' => 'auth' ], function () {
+    Route::get('/home', 'HomeController@index')->name('home');
 });
 
-Route::get('/login', 'AuthController@getLogin');
-Route::post('/login', 'AuthController@postLogin');
-Route::get('/register', 'AuthController@getRegister');
-Route::post('/register', 'AuthController@postRegister');
+Route::group([ 'middleware' => 'guest' ], function () {
+    Route::get('/login', 'AuthController@getLogin')->name('login');
+    Route::post('/login', 'AuthController@postLogin');
+    Route::get('/register', 'AuthController@getRegister')->name('register');
+    Route::post('/register', 'AuthController@postRegister');
+});
+
+Route::post('/logout', 'AuthController@logout');

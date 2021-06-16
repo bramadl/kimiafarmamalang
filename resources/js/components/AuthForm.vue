@@ -77,18 +77,26 @@ export default {
   },
 
   mounted () {
+    const formPreference = sessionStorage.getItem('auth_form_preference')
+    if (formPreference) {
+      return this.currentLoginForm = formPreference
+    }
+
     this.currentLoginForm = this.$route.path === '/login' ? 'administrator' : 'dokter'
   },
 
   methods: {
+    setSession (item) {
+      sessionStorage.setItem('auth_form_preference', item)
+    },
     showAdministratorLoginForm () {
-      if (this.$route.path === '/register') {
-        this.$router.push('/login')
-      }
+      if (this.$route.path === '/register') { this.$router.push('/login') }
       this.currentLoginForm = 'administrator'
+      this.setSession('administrator')
     },
     showDoctorLoginForm () {
       this.currentLoginForm = 'dokter'
+      this.setSession('dokter')
     }
   }
 }

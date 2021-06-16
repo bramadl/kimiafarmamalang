@@ -8,10 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'primary-gray': '#EFEFEF',
         'primary-blue': 'rgba(46, 58, 89, 1.0)',
         'primary-blue-10': 'rgba(46, 58, 89, 0.1)',
         'primary-blue-50': 'rgba(46, 58, 89, 0.5)',
-        'primary-blue-80': 'rgba(46, 58, 89, 0.8)'
+        'primary-blue-80': 'rgba(46, 58, 89, 0.8)',
+        'primary-yellow': '#E49A56'
       }
     },
   },

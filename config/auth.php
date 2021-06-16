@@ -36,9 +36,14 @@ return [
     */
 
     'guards' => [
+        // 'web' => [
+        //     'driver' => 'session',
+        //     'provider' => 'users',
+        // ],
+        
         'web' => [
             'driver' => 'session',
-            'provider' => 'users',
+            'provider' => 'doctors',
         ],
 
         'api' => [
@@ -66,9 +71,14 @@ return [
     */
 
     'providers' => [
-        'users' => [
+        // 'users' => [
+        //     'driver' => 'eloquent',
+        //     'model' => App\User::class,
+        // ],
+
+        'doctors' => [
             'driver' => 'eloquent',
-            'model' => App\User::class,
+            'model' => App\Doctor::class
         ],
 
         // 'users' => [

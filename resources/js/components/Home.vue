@@ -23,20 +23,31 @@
         }"
       />
     </div>
-    <div>
-      hahahah
+    <div class="rounded-md shadow-md bg-white">
+      <div class="py-4 px-3 border-b border-primary-blue-50">
+        <h1 class="font-medium">Dokter yang Praktek Hari Ini</h1>
+      </div>
+      <div class="py-4 px-3">
+        <div class="grid grid-cols-3 gap-6">
+          <CardDoctor />
+          <CardDoctor />
+          <CardDoctor />
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import CardDoctor from './kf/CardDoctor.vue'
 import CardInfo from './kf/CardInfo.vue'
 
 export default {
   name: 'Home',
 
   components: {
-    CardInfo
+    CardDoctor,
+    CardInfo,
   }
 }
 </script>

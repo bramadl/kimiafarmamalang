@@ -2315,7 +2315,17 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _kf_CardInfo_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./kf/CardInfo.vue */ "./resources/js/components/kf/CardInfo.vue");
+/* harmony import */ var _kf_CardDoctor_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./kf/CardDoctor.vue */ "./resources/js/components/kf/CardDoctor.vue");
+/* harmony import */ var _kf_CardInfo_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./kf/CardInfo.vue */ "./resources/js/components/kf/CardInfo.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2348,12 +2358,52 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Home',
   components: {
-    CardInfo: _kf_CardInfo_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+    CardDoctor: _kf_CardDoctor_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+    CardInfo: _kf_CardInfo_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/kf/CardDoctor.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/kf/CardDoctor.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
 
@@ -24384,10 +24434,128 @@ var render = function() {
       1
     ),
     _vm._v(" "),
-    _c("div", [_vm._v("\n    hahahah\n  ")])
+    _c("div", { staticClass: "rounded-md shadow-md bg-white" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "py-4 px-3" }, [
+        _c(
+          "div",
+          { staticClass: "grid grid-cols-3 gap-6" },
+          [
+            _c("CardDoctor"),
+            _vm._v(" "),
+            _c("CardDoctor"),
+            _vm._v(" "),
+            _c("CardDoctor")
+          ],
+          1
+        )
+      ])
+    ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "py-4 px-3 border-b border-primary-blue-50" },
+      [
+        _c("h1", { staticClass: "font-medium" }, [
+          _vm._v("Dokter yang Praktek Hari Ini")
+        ])
+      ]
+    )
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/kf/CardDoctor.vue?vue&type=template&id=44dd07e8&":
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/kf/CardDoctor.vue?vue&type=template&id=44dd07e8& ***!
+  \****************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "border border-primary-blue-10 rounded-md" },
+      [
+        _c("div", { staticClass: "mt-8 px-8" }, [
+          _c("img", {
+            staticClass: "mx-auto w-36 h-36 object-cover object-center",
+            attrs: {
+              src:
+                "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
+              alt: "Doctor's Avatar"
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "mt-4 text-center" }, [
+          _c(
+            "h2",
+            {
+              staticClass:
+                "text-xl font-medium mb-2 whitespace-nowrap overflow-auto"
+            },
+            [_vm._v("dr. Herlinda Pertiwi, Sp. DV")]
+          ),
+          _vm._v(" "),
+          _c("p", { staticClass: "text-sm font-thin" }, [
+            _vm._v("herlindapertiwi@gmail.com")
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "text-sm font-thin" }, [
+            _vm._v("+62 812-3456-7890")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "mt-6 mb-4 text-center" }, [
+          _c("h3", { staticClass: "text-md font-light" }, [
+            _vm._v("Surat Izin Praktek")
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "text-sm font-thin" }, [
+            _vm._v("446. DS / 036.1 / 35.73.306 / 2016")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "py-4 px-4 border border-primary-blue-10" }, [
+          _c("div", { staticClass: "flex items-center" }, [
+            _c("i", { staticClass: "bx bx-sm bx-group mr-4" }),
+            _vm._v(" "),
+            _c("p", { staticClass: "font-light text-sm" }, [
+              _c("strong", { staticClass: "font-bold" }, [_vm._v("46 Pasien")]),
+              _vm._v(" dilayani hari ini.\n      ")
+            ])
+          ])
+        ])
+      ]
+    )
+  }
+]
 render._withStripped = true
 
 
@@ -40306,6 +40474,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_template_id_f2b6376c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_template_id_f2b6376c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/kf/CardDoctor.vue":
+/*!***************************************************!*\
+  !*** ./resources/js/components/kf/CardDoctor.vue ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CardDoctor_vue_vue_type_template_id_44dd07e8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CardDoctor.vue?vue&type=template&id=44dd07e8& */ "./resources/js/components/kf/CardDoctor.vue?vue&type=template&id=44dd07e8&");
+/* harmony import */ var _CardDoctor_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CardDoctor.vue?vue&type=script&lang=js& */ "./resources/js/components/kf/CardDoctor.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _CardDoctor_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CardDoctor_vue_vue_type_template_id_44dd07e8___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CardDoctor_vue_vue_type_template_id_44dd07e8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/kf/CardDoctor.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/kf/CardDoctor.vue?vue&type=script&lang=js&":
+/*!****************************************************************************!*\
+  !*** ./resources/js/components/kf/CardDoctor.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardDoctor_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./CardDoctor.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/kf/CardDoctor.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardDoctor_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/kf/CardDoctor.vue?vue&type=template&id=44dd07e8&":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/components/kf/CardDoctor.vue?vue&type=template&id=44dd07e8& ***!
+  \**********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardDoctor_vue_vue_type_template_id_44dd07e8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./CardDoctor.vue?vue&type=template&id=44dd07e8& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/kf/CardDoctor.vue?vue&type=template&id=44dd07e8&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardDoctor_vue_vue_type_template_id_44dd07e8___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardDoctor_vue_vue_type_template_id_44dd07e8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

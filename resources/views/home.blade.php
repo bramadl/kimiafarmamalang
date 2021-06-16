@@ -16,7 +16,7 @@
 </head>
 <body>
   <div id="app">
-    <div class="w-full h-screen flex flex-col bg-primary-gray text-primary-blue">
+    <div class="w-full h-screen overflow-auto flex flex-col bg-primary-gray text-primary-blue">
       <div>
         <div class="shadow-md bg-white relative z-10">
           <div class="container mx-auto grid grid-cols-3">
@@ -91,13 +91,13 @@
               <h2 class="text-sm text-primary-blue font-medium uppercase mb-4">Kelola Akun Admin</h2>
               <a href="/account" class="block w-full h-auto px-4 py-3 group hover:bg-primary-yellow transition ease-out duration-300 rounded-r-full">
                 <div class="text-sm text-primary-blue group-hover:text-white tracking-widest font-light flex items-center">
-                <i class="bx bx-sm bx-file-blank"></i>
+                  <i class="bx bx-sm bx-id-card"></i>
                   <span class="ml-4">Account</span>
                 </div>
               </a>
-              <a href="/logout" class="block w-full h-auto px-4 py-3 group hover:bg-primary-yellow transition ease-out duration-300 rounded-r-full">
+              <a href="/logout" class="block w-full h-auto px-4 py-3 group hover:bg-primary-yellow transition ease-out duration-300 rounded-r-full" onclick="event.preventDefault(); document.getElementById('logout').submit()">
                 <div class="text-sm text-primary-blue group-hover:text-white tracking-widest font-light flex items-center">
-                  <i class="bx bx-sm bx-archive"></i>
+                  <i class="bx bx-sm bx-log-out" ></i>
                   <span class="ml-4">Logout</span>
                 </div>
               </a>
@@ -113,10 +113,7 @@
     </div>
   </div>
 
-  <form action="{{ action('AuthController@logout') }}" method="POST">
-    @csrf
-    <button type="submit">Logout</button>
-  </form>
+  <form id="logout" action="{{ action('AuthController@logout') }}" method="POST">@csrf</form>
 
   <script src="{{ asset('js/app.js') }}"></script>
 </body>

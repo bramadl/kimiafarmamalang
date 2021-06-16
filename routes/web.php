@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::redirect('/', '/home');
 Route::group([ 'middleware' => 'auth' ], function () {
     Route::get('/home', 'HomeController@index')->name('home');
+    Route::resources([
+        'doctors' => 'DoctorController'
+    ]);
 });
 
 Route::group([ 'middleware' => 'guest' ], function () {

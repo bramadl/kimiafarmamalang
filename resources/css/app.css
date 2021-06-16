@@ -10,3 +10,14 @@
     line-height: 1.25;
   }
 }
+
+@layer components {
+  .router-link-exact-active {
+    @apply bg-primary-yellow rounded-r-full;
+  
+  }
+  
+  .router-link-exact-active > div {
+    @apply font-bold text-white;
+  }
+}

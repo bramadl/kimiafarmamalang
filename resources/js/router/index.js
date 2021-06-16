@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import AuthForm from '../components/AuthForm'
-import Home from '../components/Home'
+import AuthForm from '../pages/AuthForm'
+import Home from '../pages/Home'
+import Doctors from '../pages/Doctors'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/home',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/doctors',
+    name: 'Doctor',
+    component: Doctors
   }
 ]
 

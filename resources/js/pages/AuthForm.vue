@@ -18,9 +18,9 @@
 </template>
 
 <script>
-import AuthFormToggleButton from './AuthFormToggleButton.vue'
-import AuthFormDoctor from './AuthFormDoctor.vue'
-import AuthFormAdministrator from './AuthFormAdministrator.vue'
+import AuthFormToggleButton from '../components/AuthFormToggleButton.vue'
+import AuthFormDoctor from '../components/AuthFormDoctor.vue'
+import AuthFormAdministrator from '../components/AuthFormAdministrator.vue'
 
 export default {
   name: 'AuthForm',

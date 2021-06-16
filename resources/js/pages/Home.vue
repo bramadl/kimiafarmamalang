@@ -39,8 +39,8 @@
 </template>
 
 <script>
-import CardDoctor from './kf/CardDoctor.vue'
-import CardInfo from './kf/CardInfo.vue'
+import CardDoctor from '../components/kf/CardDoctor.vue'
+import CardInfo from '../components/kf/CardInfo.vue'
 
 export default {
   name: 'Home',

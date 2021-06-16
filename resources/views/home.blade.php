@@ -48,63 +48,63 @@
       <div class="flex-1 flex">
         <div class="w-56 bg-white">
           <div class="py-8 pr-8">
-            <a href="/home" class="block w-full h-auto px-4 py-3 bg-primary-yellow rounded-r-full">
-              <div class="text-sm text-white tracking-widest font-bold flex items-center">
+            <router-link to="/home" class="block w-full h-auto px-4 py-3 group hover:bg-primary-yellow transition ease-out duration-300 rounded-r-full">
+              <div class="text-sm text-primary-blue group-hover:text-white tracking-widest font-light flex items-center">
                 <i class="bx bx-sm bxs-dashboard" ></i>
                 <span class="ml-4">Dashboard</span>
               </div>
-            </a>
+            </router-link>
 
             <div class="my-8">
-              <h2 class="text-sm text-primary-blue font-medium uppercase mb-4">Kelola Data Apotek</h2>
-              <a href="/doctors" class="block w-full h-auto px-4 py-3 group hover:bg-primary-yellow transition ease-out duration-300 rounded-r-full">
+              <h2 class="ml-4 text-sm text-primary-blue font-medium uppercase mb-4">Kelola Data Apotek</h2>
+              <router-link to="/doctors" class="block w-full h-auto px-4 py-3 group hover:bg-primary-yellow transition ease-out duration-300 rounded-r-full">
                 <div class="text-sm text-primary-blue group-hover:text-white tracking-widest font-light flex items-center">
                   <i class="bx bx-sm bx-user"></i>
                   <span class="ml-4">Data Dokter</span>
                 </div>
-              </a>
-              <a href="/patients" class="block w-full h-auto px-4 py-3 group hover:bg-primary-yellow transition ease-out duration-300 rounded-r-full">
+              </router-link>
+              <router-link to="/patients" class="block w-full h-auto px-4 py-3 group hover:bg-primary-yellow transition ease-out duration-300 rounded-r-full">
                 <div class="text-sm text-primary-blue group-hover:text-white tracking-widest font-light flex items-center">
                   <i class="bx bx-sm bx-group"></i>
                   <span class="ml-4">Data Pasien</span>
                 </div>
-              </a>
+              </router-link>
             </div>
 
             <div class="my-8">
-              <h2 class="text-sm text-primary-blue font-medium uppercase mb-4">Kelola Resep Obat</h2>
-              <a href="/prescriptions" class="block w-full h-auto px-4 py-3 group hover:bg-primary-yellow transition ease-out duration-300 rounded-r-full">
+              <h2 class="ml-4 text-sm text-primary-blue font-medium uppercase mb-4">Kelola Resep Obat</h2>
+              <router-link to="/prescriptions" class="block w-full h-auto px-4 py-3 group hover:bg-primary-yellow transition ease-out duration-300 rounded-r-full">
                 <div class="text-sm text-primary-blue group-hover:text-white tracking-widest font-light flex items-center">
                 <i class="bx bx-sm bx-file-blank"></i>
                   <span class="ml-4">Draft Resep</span>
                 </div>
-              </a>
-              <a href="/prescriptions/archive" class="block w-full h-auto px-4 py-3 group hover:bg-primary-yellow transition ease-out duration-300 rounded-r-full">
+              </router-link>
+              <router-link to="/prescriptions/archive" class="block w-full h-auto px-4 py-3 group hover:bg-primary-yellow transition ease-out duration-300 rounded-r-full">
                 <div class="text-sm text-primary-blue group-hover:text-white tracking-widest font-light flex items-center">
                   <i class="bx bx-sm bx-archive"></i>
                   <span class="ml-4">Arsip Resep</span>
                 </div>
-              </a>
+              </router-link>
             </div>
 
             <div class="my-8">
-              <h2 class="text-sm text-primary-blue font-medium uppercase mb-4">Kelola Akun Admin</h2>
-              <a href="/account" class="block w-full h-auto px-4 py-3 group hover:bg-primary-yellow transition ease-out duration-300 rounded-r-full">
+              <h2 class="ml-4 text-sm text-primary-blue font-medium uppercase mb-4">Kelola Akun Admin</h2>
+              <router-link to="/account" class="block w-full h-auto px-4 py-3 group hover:bg-primary-yellow transition ease-out duration-300 rounded-r-full">
                 <div class="text-sm text-primary-blue group-hover:text-white tracking-widest font-light flex items-center">
                   <i class="bx bx-sm bx-id-card"></i>
                   <span class="ml-4">Account</span>
                 </div>
-              </a>
-              <a href="/logout" class="block w-full h-auto px-4 py-3 group hover:bg-primary-yellow transition ease-out duration-300 rounded-r-full" onclick="event.preventDefault(); document.getElementById('logout').submit()">
+              </router-link>
+              <router-link to="/logout" class="block w-full h-auto px-4 py-3 group hover:bg-primary-yellow transition ease-out duration-300 rounded-r-full" onclick="event.preventDefault(); document.getElementById('logout').submit()">
                 <div class="text-sm text-primary-blue group-hover:text-white tracking-widest font-light flex items-center">
                   <i class="bx bx-sm bx-log-out" ></i>
                   <span class="ml-4">Logout</span>
                 </div>
-              </a>
+              </router-link>
             </div>
           </div>
         </div>
-        <div class="flex-1 border">
+        <div class="flex-1 overflow-auto">
           <div class="p-10">
             <router-view></router-view>
           </div>
@@ -116,5 +116,6 @@
   <form id="logout" action="{{ action('AuthController@logout') }}" method="POST">@csrf</form>
 
   <script src="{{ asset('js/app.js') }}"></script>
+  @include ('mixins.swalMixins')
 </body>
 </html>

@@ -42,7 +42,8 @@ class AuthController extends Controller
         $attemptLogin = Auth::attempt($credentials);
         if ($attemptLogin) {
             return redirect()
-                    ->route('home');
+                    ->route('home')
+                    ->with('success', 'Halo ' . $doctor->fullname . '!');
         }
     }
 
